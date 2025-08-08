@@ -75,7 +75,8 @@ main a{
 .container-s1{
     @extend .flex-col-center;
     width: 50%;
-    height: 400px;
+    height: auto;
+    padding: 10px;
     background-color: #206b75;
     text-align: center;
     border: 2px solid white;
@@ -459,8 +460,7 @@ footer a{
 }
 
 .container-s1{
-    width: 65%;
-    height: 450px;
+    width: 60%;
     top: 10%;
     right: 5%;
 }
