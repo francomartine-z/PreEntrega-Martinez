@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,15 +26,15 @@
     </header>
     <main>
         <section class="s1">
-            <div class="container-s1">
+            <div class="container-s1 animate__animated animate__fadeInBottomRight">
                 <h1 id="index-h1">Franco Martinez</h1>
                 <P>Hola, soy Franco, desarrollador web frontend. Diseño y construyo sitios modernos , rapidos y respomsivos que se adaptan a cualquier dispositivo. Me enfoco en crear experiencias claras, atractivas y funcionales para los usuarios.</P>
-            <a class="btn-inicio" href="pages/contacts.html">Hablemos</a></div>
+            <a class="btn-inicio animate__animated animate__fadeInBottomRight" href="pages/contacts.html">Hablemos</a></div>
             <img id="imagen-inicios1" src="https://images.pexels.com/photos/16129688/pexels-photo-16129688.jpeg" alt="https://www.pexels.com/es-es/@fotios-photos/">
         </section>
         <section class="s2">
-            <h2>Tecnologias que uso</h2>
-            <div class="container-s2">
+            <h2 class="s2_title" data-aos="fade-up">Tecnologias que uso</h2>
+            <div class="container-s2" data-aos="fade-up">
                 <div class="tecnologias html">
                     <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png" alt="HTML">
                     <p>HTML</p>
@@ -53,7 +55,7 @@
                 <h2 class="titulo-s3">¡Explora mi codigo!</h2>
                 <p class="t1">Acá podes ver una muestra de lo que me gusta construir. Diseño sitios funcionales, responsivos y enfocados en la experiencia del usuario.</p>
                 <p class="t2">¿Queres ver mas? Te invito a recorrer la seccion completa de proyectos.</p>
-                <img src="https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg" class="img-s3"><br>
+                <img src="https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg" class="img-s3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"><br>
                 <a href="pages/projects.html" class="btn-s3">Ver</a>
             </div>
         </section>
@@ -66,5 +68,9 @@
             <li><a href="https://github.com/francomartine-z" target="_blank">Github</a></li>
         </ul>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

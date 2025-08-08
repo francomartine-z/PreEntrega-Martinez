@@ -1,0 +1,31 @@
+@mixin button-style($size){
+    background-color: black;
+    font-family: "roboto" sans-serif;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    border-radius: 10px ;
+    font-size: $size;
+    &:hover{
+        background-color: #206b75;
+        transition: 0.5s ease;
+    }
+}
+
+.img-proyecto a{
+    @include button-style(15px);
+    padding: 3px 20px;
+}
+
+.btn-s3{
+    @include button-style(20px);
+    grid-area: btn-s3;
+    padding: 10px;
+}
+
+@media(min-width: 1024px){
+    .btn-inicio{
+  @include button-style(20px)
+}
+}
+
