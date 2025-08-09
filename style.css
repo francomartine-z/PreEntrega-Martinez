@@ -123,9 +123,9 @@ main a {
 }
 
 .container-s1 {
-  width: 50%;
+  width: 60%;
   height: auto;
-  padding: 10px;
+  padding: 5% 8%;
   background-color: #206b75;
   text-align: center;
   border: 2px solid white;
@@ -486,9 +486,13 @@ footer a {
     font-size: 12px;
   }
   .container-s1 {
-    width: 60%;
+    width: 70%;
     top: 10%;
     right: 5%;
+    padding: 5% 8%;
+  }
+  #index-h1 {
+    font-size: 15px;
   }
   .s2_title {
     display: flex;
