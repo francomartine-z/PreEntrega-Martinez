@@ -12,20 +12,34 @@
     }
 }
 
-.img-proyecto a{
+.projects__img a{
     @include button-style(15px);
     padding: 3px 20px;
 }
 
-.btn-s3{
+.section-3__btn{
     @include button-style(20px);
     grid-area: btn-s3;
     padding: 10px;
 }
 
+@media(min-width:768px){
+    .section-3__btn{
+    @include button-style(45px);
+    font-family: "Inter", sans-serif;
+  }
+
+  .img-proyecto a{
+        padding: 5px 30px;
+    }
+}
+
 @media(min-width: 1024px){
     .btn-inicio{
-  @include button-style(20px)
+  @include button-style(20px);
 }
+    .section-3__btn{
+    @include button-style(55px);
+    }
 }
 
