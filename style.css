@@ -264,16 +264,17 @@ main a {
   width: auto;
   height: auto;
   max-width: 78%;
-  padding: 5% 8%;
+  padding: 10px 10px;
   background-color: #206b75;
   text-align: center;
   border: 2px solid white;
   border-radius: 15px;
   justify-content: center;
-  position: absolute;
-  right: 2%;
-  top: 5%;
-  gap: 15px;
+  position: relative;
+  margin: 0 auto;
+  left: 1.8em;
+  top: 2em;
+  gap: 10px;
   opacity: 80%;
 }
 
@@ -303,8 +304,9 @@ main a {
 
 /*seccion 2 del index*/
 .section-2 {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #000000;
+  overflow: hidden;
 }
 
 .section-2__title {
@@ -320,7 +322,7 @@ main a {
   width: 100%;
   text-align: center;
   position: relative;
-  top: 50px;
+  margin-top: 50px;
   gap: 15px;
 }
 
@@ -335,14 +337,14 @@ main a {
   position: relative;
   width: 60%;
   text-align: center;
-  margin: 0 auto;
-  top: 8%;
+  margin: 40px auto;
 }
 
 /* seccion 3 del index*/
 .section-3 {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #a69e9e;
+  overflow: hidden;
 }
 
 .section-3__container {
@@ -386,7 +388,7 @@ main a {
 /*paginas secundarias*/
 .pagina-secundaria .s1 {
   background-color: #a69e9e;
-  height: 100vh;
+  min-height: 100vh;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -595,9 +597,7 @@ main a {
     overflow-x: hidden;
   }
   .section-1__container {
-    top: 3%;
-    right: 3%;
-    padding: 5% 8%;
+    padding: 3% 5%;
   }
   .section-1__title {
     font-size: 45px;
@@ -662,45 +662,15 @@ main a {
     font-size: 14px;
   }
 }
-@media (min-width: 460px) {
-  .section-2__container {
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 10px;
-    flex-wrap: wrap;
-    padding: 20px;
-    top: 20%;
-  }
-  .section-2__paragraph {
-    width: 70%;
-    top: 20%;
-  }
-  .section-3__container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "titulo-s3 img-s3" "t1 img-s3" "t2 btn-s3";
-    width: 80%;
-    width: auto;
-    top: 5%;
-  }
-  .section-3__title {
-    font-size: 30px;
-  }
-  .section-3__text-1 {
-    font-size: 18px;
-  }
-  .section-3__text-2 {
-    font-size: 20px;
-  }
-}
 @media (min-width: 768px) {
   .section-1__container {
     gap: 10px;
   }
   .section-1__title {
-    font-size: 60px;
+    font-size: 50px;
   }
   .section-1__paragraph {
-    font-size: 22px;
+    font-size: 20px;
   }
   .section-1__btn {
     font-size: 24px;
@@ -717,6 +687,8 @@ main a {
     font-size: 22px;
   }
   .section-3__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titulo-s3 img-s3" "t1 img-s3" "t2 btn-s3";
     width: 80%;
     top: 20%;
   }
@@ -806,10 +778,11 @@ main a {
   .section-1__container {
     align-items: stretch;
     text-align: start;
+    position: absolute;
     width: 60%;
     height: 80%;
-    left: 1%;
     top: 10%;
+    right: 40%;
     background: none;
     border: none;
     opacity: inherit;
@@ -850,7 +823,7 @@ main a {
     gap: 40px;
     flex-wrap: wrap;
     padding: 20px;
-    top: 20%;
+    margin-top: 100px;
   }
   .section-2__img {
     display: flex;
@@ -868,7 +841,6 @@ main a {
   .section-2__paragraph {
     font-size: 30px;
     width: 650px;
-    top: 30%;
     font-family: "Intel", sans-serif;
   }
   .section-3__title {
