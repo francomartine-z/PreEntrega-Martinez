@@ -261,8 +261,9 @@ main a {
 }
 
 .section-1__container {
-  width: 60%;
+  width: auto;
   height: auto;
+  max-width: 78%;
   padding: 5% 8%;
   background-color: #206b75;
   text-align: center;
@@ -270,8 +271,8 @@ main a {
   border-radius: 15px;
   justify-content: center;
   position: absolute;
-  right: 10%;
-  top: 8%;
+  right: 2%;
+  top: 5%;
   gap: 15px;
   opacity: 80%;
 }
@@ -593,11 +594,9 @@ main a {
     min-height: 100vh;
     overflow-x: hidden;
   }
-  .section-s1 {
-    position: absolute;
-    width: 60%;
-    top: 10%;
-    right: 5%;
+  .section-1__container {
+    top: 3%;
+    right: 3%;
     padding: 5% 8%;
   }
   .section-1__title {
@@ -663,10 +662,38 @@ main a {
     font-size: 14px;
   }
 }
+@media (min-width: 460px) {
+  .section-2__container {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
+    top: 20%;
+  }
+  .section-2__paragraph {
+    width: 70%;
+    top: 20%;
+  }
+  .section-3__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titulo-s3 img-s3" "t1 img-s3" "t2 btn-s3";
+    width: 80%;
+    width: auto;
+    top: 5%;
+  }
+  .section-3__title {
+    font-size: 30px;
+  }
+  .section-3__text-1 {
+    font-size: 18px;
+  }
+  .section-3__text-2 {
+    font-size: 20px;
+  }
+}
 @media (min-width: 768px) {
   .section-1__container {
-    width: 50%;
-    top: 40px;
     gap: 10px;
   }
   .section-1__title {
@@ -690,8 +717,6 @@ main a {
     font-size: 22px;
   }
   .section-3__container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "titulo-s3 img-s3" "t1 img-s3" "t2 btn-s3";
     width: 80%;
     top: 20%;
   }
