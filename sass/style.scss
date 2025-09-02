@@ -174,6 +174,11 @@ main a{
     overflow-y: hidden;
 }
 
+.pagina-secundaria .contacts{
+    min-height: none;
+    height: 100vh;
+}
+
 /*seccion 1 del about-me*/
 .about-me__container{
     display: grid;
